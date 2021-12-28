@@ -5,9 +5,13 @@ This repository includes shell files for submitting tasks to NUS-HPC
 ## Setup
 
 Set working directory to a temporate path of 500G (all files will be deleted after 60 days).
+
 Check available software packages available in HPC modules.
+
 Install any software packages or versions of software packages you need but not available in HPC modules.
+
 Upload raw reads in folders, each folder for each library.
+
 Upload reference genome.
 
 ```bash
