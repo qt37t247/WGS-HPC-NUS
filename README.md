@@ -39,7 +39,15 @@ unzip with
 unzip Trimmomatic-vxxx.zip
 ```
 
-A folder will be created named "Trimmomatic-vxxx", where the .fa files of adapters are stored.   
+A folder will be created named "Trimmomatic-vxxx", where the .fa files of adapters are stored.
+
+Output files include log files. 90% reads to the "paired" fq files consider acceptable. 
+
+Too many unpaired reads indicate shorter inserts than expected (acceptable for ancient samples).
+
+If so, consider to trim as single-ended read with the option "SE" in the Trimmomatic.
+
+Single-ended reads should be "bbrenamed" before proceeding to the alignment procedure.
 
 ## Index reference genome with bwa, samtools and picard 
 
