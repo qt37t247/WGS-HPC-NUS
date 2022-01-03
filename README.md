@@ -30,7 +30,9 @@ Output files can be compiled and visualize with multiqc
 Example file: trim.sh
 
 Upload the zipped file of latest version of Trimmomatic, which can be download at:
+
 http://www.usadellab.org/cms/?page=trimmomatic
+
 unzip with
 
 ```bash
