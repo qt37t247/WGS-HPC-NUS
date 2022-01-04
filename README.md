@@ -69,13 +69,10 @@ Example file: align.sh
 
 Example file: picard.sh
 
-
-## Variants calling (SNPs and indels) with GATK4
-
-Example file: gatk_HC.sh
+By the end of this step you may consider directly calling variants with GATK4 without re-alignment (use the gatk_HC.sh). Runtime for each sample may exceed a week. 
 
 
-## Alternative variants calling with GATK3 and ANGSD
+## Indel realignment and variants calling with ANGSD
 
 Example file: gatk_RA.sh
 
