@@ -2,6 +2,7 @@
 
 This repository includes shell files for submitting tasks to NUS-HPC
 
+
 ## Setup
 
 Set working directory to a temporate path of 500G (all files will be deleted after 60 days).
@@ -19,11 +20,13 @@ cd hpctmp/dbsxxx
 module avail
 ```
 
+
 ## Check reads quality with FastQC
 
 Example file: fqc.sh
 
 Output files can be compiled and visualize with multiqc
+
 
 ## Quality filtering and adapter trimming with Trimmomatic
 
@@ -49,25 +52,33 @@ If so, consider to trim as single-ended read with the option "SE" in the Trimmom
 
 Single-ended reads should be "bbrenamed" before proceeding to the alignment procedure.
 
+
 ## Index reference genome with bwa, samtools and picard 
 
 Example file: reference_index.sh
+
+Upload the reference genome file to the working directory (unzip if the file is compressed).
+
 
 ## Generate alignments with bwa and samtools
 
 Example file: align.sh
 
+
 ## Mark duplicates and build bam index with picard
 
 Example file: picard.sh
+
 
 ## Variants calling (SNPs and indels) with GATK4
 
 Example file: gatk_HC.sh
 
+
 ## Alternative variants calling with GATK3 and ANGSD
 
 Example file: gatk_RA.sh
+
 
 ## Contact author
 
