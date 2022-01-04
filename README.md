@@ -11,7 +11,7 @@ Check available software packages available in HPC modules.
 
 Install any software packages or versions of software packages you need but not available in HPC modules.
 
-Upload raw reads in folders, each folder for each library.
+Upload raw reads in folders, each folder for each lane.
 
 Upload reference genome.
 
@@ -60,21 +60,38 @@ Example file: reference_index.sh
 Upload the reference genome file to the working directory (unzip if the file is compressed).
 
 
-## Generate alignments with bwa and samtools
+## Generate alignments with bwa, samtools and picard
 
 Example file: align.sh
 
+The outputs are sorted bam files with duplicates marked and bam index files (.bai). All intermediates are not kept.  
 
-## Mark duplicates and build bam index with picard
-
-Example file: picard.sh
-
-By the end of this step you may consider directly calling variants with GATK4 without re-alignment (use the gatk_HC.sh). Runtime for each sample may exceed a week. 
+By the end of this step you may consider directly calling variants with GATK4 without re-alignment (use the gatk4.sh). Runtime for each sample may exceed a week. 
 
 
-## Indel realignment and variants calling with ANGSD
+## Variant calling with GATK4 !!OPTIONAL, EXTERMELY SLOW AT THE MOMENT. 
 
-Example file: gatk_RA.sh
+Example file: gatk4.sh
+
+Three vcf files per sample generated, namely raw vcf, SNP vcf and indel vcf.
+
+A flagstat.txt file to summarize alignment stats of all samples.
+
+
+## Indel realignment with GATK3
+
+Example file: gatk3.sh
+
+Generates re-aligned bam files for variant calling using ANGSD. You may want to download and store those bam files as these may be used serval times during your analyses. 
+
+A flagstat.txt file to summarize alignment stats of all samples.
+
+
+## Variant calling with ANGSD
+
+Example file: angsd.sh
+
+(Under construction...)
 
 
 ## Contact author
