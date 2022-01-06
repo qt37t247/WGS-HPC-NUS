@@ -20,7 +20,7 @@ cd hpctmp/dbsxxx
 module avail
 ```
 
-For the example shell files, I submit them to parallel12. If you submit to other queues (e.g. parallel24), please change threads (normally specified after the flag "-t" or "-c") used in the program accordingly to make the full use of your HPC quota.  
+For some example shell files, I submit them to parallel12. If you submit to other queues (e.g. parallel24), please change threads (normally specified after the flag "-t" or "-c") used in the program accordingly to make the full use of your HPC quota.  
 
 
 ## Check reads quality with FastQC
