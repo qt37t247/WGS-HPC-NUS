@@ -10,5 +10,6 @@ module load fastqc
 module load python3.6.4
 
 cd /hpctmp/<NUSID>/<PROJECT>
-fastqc *.fq.gz
+mkdir fastqc
+fastqc *.fq.gz -t 12 -o /hpctmp/<NUSID>/<PROJECT>/fastqc
 
