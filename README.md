@@ -66,9 +66,13 @@ Upload the reference genome file to the working directory (unzip if the file is 
 
 Example file: align.sh
 
-The outputs are sorted bam files with duplicates marked and bam index files (.bai). All intermediates are not kept.  
+Somehow the picard in HPC is not working. Download the picard.jar and upload to your working directory
 
-By the end of this step you may consider directly calling variants with GATK4 without re-alignment (use the gatk4.sh). Runtime for each sample may exceed a week. 
+https://broadinstitute.github.io/picard/
+
+The outputs are sorted bam files with duplicates marked and bam index files (.bai).
+
+By the end of this step you may consider directly calling variants with GATK4 without re-alignment (use the gatk4.sh).
 
 
 ## Variant calling with GATK4 !!OPTIONAL, EXTERMELY SLOW AT THE MOMENT. 
