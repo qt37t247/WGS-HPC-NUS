@@ -10,7 +10,7 @@ module load gatk
 module load samtools
 module load python3.6.4
 
-cd /hpctmp/dbstq/test_fresh
+cd /hpctmp/<NUSID>/<PROJECT>
 ( for i in dedup_*_sorted.bam ; do printf $i; printf "\n"; samtools flagstat -@24 $i ; done) > flagstat.txt
 
 for i in dedup_*_sorted.bam
