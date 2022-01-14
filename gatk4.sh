@@ -15,15 +15,15 @@ cd /hpctmp/<NUSID>/<PROJECT>
 
 for i in dedup_*_sorted.bam
 do 
-gatk --java-options "-XX:+UseParallelGC -XX:ParallelGCThreads=24 -Xmx180g" HaplotypeCaller -R /hpctmp/dbstq/test_fresh/Leiothrix_genomic.fna -I "$i" --native-pair-hmm-threads 24 -O "$i_raw.vcf"
+gatk --java-options "-XX:+UseParallelGC -XX:ParallelGCThreads=24 -Xmx180g" HaplotypeCaller -R <REFERENCE_GENOME_FILE> -I "$i" --native-pair-hmm-threads 24 -O "$i_raw.vcf"
 done
 
 for i in *_raw.vcf
 do 
-gatk --java-options "-XX:+UseParallelGC -XX:ParallelGCThreads=24 -Xmx180g" SelectVariants -R /hpctmp/dbstq/test_fresh/Leiothrix_genomic.fna -V "$i" -select-type SNP -O "$i_snp.vcf"
+gatk --java-options "-XX:+UseParallelGC -XX:ParallelGCThreads=24 -Xmx180g" SelectVariants -R <REFERENCE_GENOME_FILE> -V "$i" -select-type SNP -O "$i_snp.vcf"
 done
 
 for i in *_raw.vcf
 do 
-gatk --java-options "-XX:+UseParallelGC -XX:ParallelGCThreads=24 -Xmx180g" SelectVariants -R /hpctmp/dbstq/test_fresh/Leiothrix_genomic.fna -V "$i" -select-type INDEL -O "$i_indel.vcf"
+gatk --java-options "-XX:+UseParallelGC -XX:ParallelGCThreads=24 -Xmx180g" SelectVariants -R <REFERENCE_GENOME_FILE> -V "$i" -select-type INDEL -O "$i_indel.vcf"
 done
