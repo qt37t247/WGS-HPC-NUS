@@ -1,6 +1,6 @@
 #!/bin/bash
 #PBS -q parallel12
-#PBS -l select=4:ncpus=12:mem=45GB
+#PBS -l select=1:ncpus=12:mem=45GB
 #PBS -l walltime=500:00:00
 #PBS -j oe
 
