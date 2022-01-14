@@ -59,6 +59,10 @@ Single-ended reads should be "bbrenamed" before proceeding to the alignment proc
 
 Example file: reference_index.sh
 
+Somehow the picard in HPC is not working. Download the "picard.jar" and upload to your working directory
+
+https://broadinstitute.github.io/picard/
+
 Upload the reference genome file to the working directory (unzip if the file is compressed).
 
 
@@ -66,16 +70,10 @@ Upload the reference genome file to the working directory (unzip if the file is 
 
 Example file: align.sh
 
-Somehow the picard in HPC is not working. Download the picard.jar and upload to your working directory
-
-https://broadinstitute.github.io/picard/
-
-The outputs are sorted bam files with duplicates marked and bam index files (.bai).
-
-By the end of this step you may consider directly calling variants with GATK4 without re-alignment (use the gatk4.sh).
+The outputs are sorted bam files with duplicates marked (dedup_<SAMPLE_NAME>_sorted.bam) and bam index files (dedup_<SAMPLE_NAME>_sorted.bam.bai).
 
 
-## Variant calling with GATK4 !!OPTIONAL, EXTERMELY SLOW AT THE MOMENT. 
+## Variant calling with GATK4 (testing speed at the moment) 
 
 Example file: gatk4.sh
 
@@ -84,7 +82,7 @@ Three vcf files per sample generated, namely raw vcf, SNP vcf and indel vcf.
 A flagstat.txt file to summarize alignment stats of all samples.
 
 
-## Indel realignment with GATK3
+## Indel realignment with GATK3 (not necessary if GATK4 speed is acceptable)
 
 Example file: gatk3.sh
 
@@ -93,7 +91,7 @@ Generates re-aligned bam files for variant calling using ANGSD. You may want to 
 A flagstat.txt file to summarize alignment stats of all samples.
 
 
-## Variant calling with ANGSD
+## Variant calling with ANGSD (not necessary if GATK4 speed is acceptable)
 
 Example file: angsd.sh
 
