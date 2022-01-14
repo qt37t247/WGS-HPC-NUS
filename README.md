@@ -70,7 +70,7 @@ Upload the reference genome file to the working directory (unzip if the file is 
 
 Example file: align.sh
 
-The outputs are sorted bam files with duplicates marked (dedup_<SAMPLE_NAME>__sorted.bam) and bam index files (dedup_<SAMPLE_NAME>_sorted.bam.bai).
+The outputs are sorted bam files with duplicates marked (dedup_<SAMPLE_NAME>__sorted.bam) and bam index files (dedup__<SAMPLE_NAME>_sorted.bam.bai).
 
 
 ## Variant calling with GATK4 (testing speed at the moment) 
