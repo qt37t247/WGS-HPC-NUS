@@ -82,22 +82,6 @@ Three vcf files per sample generated, namely raw vcf, SNP vcf and indel vcf.
 A flagstat.txt file to summarize alignment stats of all samples.
 
 
-## Indel realignment with GATK3 (not necessary if GATK4 speed is acceptable)
-
-Example file: gatk3.sh
-
-Generates re-aligned bam files for variant calling using ANGSD. You may want to download and store those bam files as these may be used serval times during your analyses. 
-
-A flagstat.txt file to summarize alignment stats of all samples.
-
-
-## Variant calling with ANGSD (not necessary if GATK4 speed is acceptable)
-
-Example file: angsd.sh
-
-(Under construction...)
-
-
 ## Contact author
 
 tangqiannus@gmail.com
