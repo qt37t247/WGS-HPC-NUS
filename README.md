@@ -96,6 +96,11 @@ qsub projectX.sh
 Mirchandani, C. D., Shultz, A. J., Thomas, G. W., Smith, S. J., Baylis, M., Arnold, B., ... & Sackton, T. B. (2023). A fast, reproducible, high-throughput variant calling workflow for population genomics. Molecular Biology and Evolution, msad270.
 
 
+## Acknowledgement
+
+“We would like to acknowledge that computational work involved in this research work is partially/fully supported by NUS IT’s Research Computing group using grant numbers NUSREC-HPC-00001”.
+
+
 ## Contact author
 
 tangqiannus@gmail.com
