@@ -60,7 +60,8 @@ https://snparcher.readthedocs.io/en/latest/executing.html#cluster-execution
 
 Please note that the pipeline may need access to the Internet, so use cluster "gold" or "tiger2" in the hpc. 
 
-Use
+
+Use command
 ```
 gstat
 ```
