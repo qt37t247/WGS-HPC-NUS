@@ -37,13 +37,21 @@ By the end, you will have the following directory structure:
 ```
 ├── snpArcher
 ├── project_1/
+|   ├── project1.sh
 │   ├── config/
 │   │   ├── config.yaml
 │   │   ├── resources.yaml
 │   │   └── samples.csv
 │   ├── data
+|   |   ├── ref_genome/
+|   |   |   ├── ././ref_genome.fna
+|   |   ├── sample1_1.fq.gz
+|   |   ├── sample1_2.fq.gz
+|   |   ├── sample2_1.fq.gz
+|   |   ├── sample2_2.fq.gz
 │   └── results
 └── project_2/
+    ├── project2.sh
     ├── config/
     │   ├── config.yaml
     │   ├── resources.yaml
