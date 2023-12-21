@@ -86,6 +86,11 @@ gstat
 to check the availability of the clusters.
 
 
+Finally, when everything is set, run:
+```
+qsub projectX.sh
+```
+
 ## References
 
 Mirchandani, C. D., Shultz, A. J., Thomas, G. W., Smith, S. J., Baylis, M., Arnold, B., ... & Sackton, T. B. (2023). A fast, reproducible, high-throughput variant calling workflow for population genomics. Molecular Biology and Evolution, msad270.
