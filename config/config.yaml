@@ -5,7 +5,7 @@
 samples: "config/samples.csv" # path to the sample metadata CSV
 resource_config: "config/resources.yaml" # path to resources yaml config
 final_prefix: "T2_MW" # prefix for final output files
-intervals: True #Set to True if you want to perform variant calling using interval approach.
+intervals: False #Set to True if you want to perform variant calling using interval approach.
 sentieon: False #set to True if you want to use sentieon, False if you want GATK
 sentieon_lic: "" #set to path of sentieon license
 remote_reads: False # Set True if reads are in a Google Bucket seperate from --default-remote-prefix.
