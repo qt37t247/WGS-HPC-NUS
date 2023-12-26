@@ -14,10 +14,12 @@ Then install snparcher to your "hpctmp" of 500G (request to get maximum 2TB for 
 
 ```bash
 module load miniconda
+#module load miniforge3
 conda create --name snparcher
 source activate snparcher
 conda install -c bioconda snakemake
 cd /hpctmp/dbstq/
+# cd /scratch/user/nus/dbstq/
 git clone https://github.com/harvardinformatics/snpArcher.git
 ```
 
@@ -35,7 +37,7 @@ For each project (normally a species/species complex sharing the same reference 
 mkdir projectX
 mkdir projectX/data
 mkdir projectX/results
-cp snpArcher/config /projectX -r
+cp snpArcher/config projectX -r
 ```
 
 
