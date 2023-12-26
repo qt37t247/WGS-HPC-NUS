@@ -14,7 +14,7 @@ Then install snparcher to your "hpctmp" of 500G (request to get maximum 2TB for 
 
 ```bash
 module load miniconda
-#module load miniforge3
+# module load miniforge3
 conda create --name snparcher
 source activate snparcher
 conda install -c bioconda snakemake
