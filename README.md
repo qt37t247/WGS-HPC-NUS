@@ -1,6 +1,6 @@
 # WGS bioinfo with NUS-HPC
 
-This repository includes example files for submitting tasks to NUS-HPC
+This repository includes example files for submitting tasks to NUS-HPC and NSCC (National Supercomupting Singapore).
 
 The variant calling protocol generally follows the automated pipeline "snpArcher" (Mirchandani et al., 2023), empowered by snakemake. 
 https://github.com/harvardinformatics/snpArcher
@@ -14,12 +14,12 @@ Then install snparcher to your "hpctmp" of 500G (request to get maximum 2TB for 
 
 ```bash
 module load miniconda
-# module load miniforge3
+# module load miniforge3 #(if use NSCC)
 conda create --name snparcher
 source activate snparcher
 conda install -c bioconda snakemake
 cd /hpctmp/dbstq/
-# cd /scratch/user/nus/dbstq/
+# cd /scratch/users/nus/dbstq/ #(if use NSCC)
 git clone https://github.com/harvardinformatics/snpArcher.git
 ```
 
