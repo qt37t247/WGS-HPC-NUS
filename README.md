@@ -1,6 +1,6 @@
 # WGS bioinfo with NUS-HPC/NSCC
 
-This repository includes example files for submitting tasks to NUS-HPC and NSCC (National Supercomupting Singapore).
+This repository includes example files for submitting tasks to NUS-HPC and NSCC (National Supercomupting Centre Singapore).
 
 The variant calling protocol generally follows the automated pipeline "snpArcher" (Mirchandani et al., 2023), empowered by snakemake. 
 https://github.com/harvardinformatics/snpArcher
