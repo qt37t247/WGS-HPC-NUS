@@ -12,6 +12,10 @@ Create a conda environment for snakemake and snparcher.
 
 Then install snparcher to your "hpctmp" of 500G (request to get maximum 2TB for free).
 
+If still not enough, try NSCC with quota of 100TB space.....
+
+NUS-HPC allows longer walltime, whereas NSCC can allocate more threads and memory for a single run but check your quota of cpu time.
+
 ```bash
 module load miniconda
 # module load miniforge3 #(if use NSCC)
