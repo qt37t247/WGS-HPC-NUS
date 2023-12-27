@@ -3,7 +3,7 @@
 #$ -cwd
 
 #PBS -q parallel12
-#PBS -l select=1:cluster=tiger2:ncpus=12:mpiprocs=12:mem=10GB
+#PBS -l select=1:cluster=tiger2:ncpus=12:mpiprocs=12:mem=45GB:ompthreads=12
 #PBS -l walltime=500:00:00
 #PBS -j oe
 
