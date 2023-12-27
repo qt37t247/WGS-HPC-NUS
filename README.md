@@ -1,4 +1,4 @@
-# WGS bioinfo with NUS-HPC
+# WGS bioinfo with NUS-HPC/NSCC
 
 This repository includes example files for submitting tasks to NUS-HPC and NSCC (National Supercomupting Singapore).
 
