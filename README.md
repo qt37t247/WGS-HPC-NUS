@@ -32,6 +32,7 @@ By the end, you will have a folder named "snpArcher" under your "hpctmp".
 
 Conda environments take space in your home directory (50GB only)!! Please do housekeeping and remove obsolete environments regularly.
 
+We also uploaded example files with Sentieon (https://www.sentieon.com/) using NSCC.
 
 ## Start a project
 
