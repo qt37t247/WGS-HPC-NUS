@@ -34,6 +34,11 @@ Conda environments take space in your home directory (50GB only)!! Please do hou
 
 We also uploaded example files with Sentieon (https://www.sentieon.com/) using NSCC.
 
+Change the rule files under "/snpArcher/workflow/rules" when necessary (for examples):
+
+1. To aquire final vcf with both invariant and variant site, replace "VARIANT" with "CONFIDENT" for flag "--emit_mode" under "rule sentieon_combine_gvcf" in rule file "sentieon.smk".
+2. For chromosomes exceed the length of 512Mbp, replace "bam" with "cram", and "bai" with "crai" across multiple rule files.
+
 ## Start a project
 
 For each project (normally a species/species complex sharing the same reference genome), create a project folder and copy the "config" folder.
